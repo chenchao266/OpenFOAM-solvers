@@ -19,17 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="acousticFoam\acousticFoam.C" />
+    <ClCompile Include="chemFoam\chemFoam.C" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="acousticFoam\createFields.H" />
-    <ClInclude Include="acousticFoam\createRegionControls.H" />
-    <ClInclude Include="acousticFoam\paEqn.H" />
-    <ClInclude Include="acousticFoam\readTransportProperties.H" />
+    <ClInclude Include="chemFoam\createBaseFields.H" />
+    <ClInclude Include="chemFoam\createControls.H" />
+    <ClInclude Include="chemFoam\createFieldRefs.H" />
+    <ClInclude Include="chemFoam\createFields.H" />
+    <ClInclude Include="chemFoam\createSingleCellMesh.H" />
+    <ClInclude Include="chemFoam\hEqn.H" />
+    <ClInclude Include="chemFoam\output.H" />
+    <ClInclude Include="chemFoam\pEqn.H" />
+    <ClInclude Include="chemFoam\readControls.H" />
+    <ClInclude Include="chemFoam\readInitialConditions.H" />
+    <ClInclude Include="chemFoam\setDeltaT.H" />
+    <ClInclude Include="chemFoam\solveChemistry.H" />
+    <ClInclude Include="chemFoam\YEqn.H" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8A451363-4878-4709-BCFC-18F303E3774F}</ProjectGuid>
+    <ProjectGuid>{5E184D63-9762-4377-A8F7-A568BDA39070}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -77,6 +86,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

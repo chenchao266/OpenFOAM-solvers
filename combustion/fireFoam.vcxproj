@@ -19,15 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="potentialFoam\createControls.H" />
-    <ClInclude Include="potentialFoam\createFields.H" />
+    <ClInclude Include="fireFoam\createClouds.H" />
+    <ClInclude Include="fireFoam\createFieldRefs.H" />
+    <ClInclude Include="fireFoam\createFields.H" />
+    <ClInclude Include="fireFoam\createPyrolysisModel.H" />
+    <ClInclude Include="fireFoam\createRegionControls.H" />
+    <ClInclude Include="fireFoam\createSurfaceFilmModel.H" />
+    <ClInclude Include="fireFoam\pEqn.H" />
+    <ClInclude Include="fireFoam\phrghEqn.H" />
+    <ClInclude Include="fireFoam\rhoEqn.H" />
+    <ClInclude Include="fireFoam\setMultiRegionDeltaT.H" />
+    <ClInclude Include="fireFoam\solidRegionDiffusionNo.H" />
+    <ClInclude Include="fireFoam\UEqn.H" />
+    <ClInclude Include="fireFoam\YEEqn.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="potentialFoam\potentialFoam.C" />
+    <ClCompile Include="fireFoam\fireFoam.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3F3D20A2-38F4-4D06-B93C-FA0E1B7DAA8B}</ProjectGuid>
+    <ProjectGuid>{FE62F171-7635-4024-A600-02CDB4DC82E5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -110,7 +121,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;..\..\OpenFOAM-win\lagrangian;..\..\OpenFOAM-win\regionModels;..\..\OpenFOAM-win\combustionModels;..\..\OpenFOAM-win\ODE;..\..\OpenFOAM-win\finiteArea;..\..\OpenFOAM-win\faOptions;..\..\OpenFOAM-win\regionFaModels;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>WM_LABEL_SIZE=64;WM_DP;NoRepository;WIN32;WIN64;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>

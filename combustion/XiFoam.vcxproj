@@ -19,15 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="potentialFoam\createControls.H" />
-    <ClInclude Include="potentialFoam\createFields.H" />
+    <ClInclude Include="XiFoam\bEqn.H" />
+    <ClInclude Include="XiFoam\createFieldRefs.H" />
+    <ClInclude Include="XiFoam\createFields.H" />
+    <ClInclude Include="XiFoam\EaEqn.H" />
+    <ClInclude Include="XiFoam\EauEqn.H" />
+    <ClInclude Include="XiFoam\ftEqn.H" />
+    <ClInclude Include="XiFoam\pEqn.H" />
+    <ClInclude Include="XiFoam\readCombustionProperties.H" />
+    <ClInclude Include="XiFoam\UEqn.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="potentialFoam\potentialFoam.C" />
+    <ClCompile Include="XiFoam\XiFoam.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3F3D20A2-38F4-4D06-B93C-FA0E1B7DAA8B}</ProjectGuid>
+    <ProjectGuid>{2529631E-B953-49BE-8102-C650E338BCCF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -43,7 +50,7 @@
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
@@ -81,7 +88,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENQBMM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -95,7 +102,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENQBMM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -110,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;..\..\OpenFOAM-win\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>WM_LABEL_SIZE=64;WM_DP;NoRepository;WIN32;WIN64;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>

@@ -19,15 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="potentialFoam\createControls.H" />
-    <ClInclude Include="potentialFoam\createFields.H" />
+    <ClCompile Include="coldEngineFoam\coldEngineFoam.C" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="potentialFoam\potentialFoam.C" />
+    <ClInclude Include="coldEngineFoam\createFieldRefs.H" />
+    <ClInclude Include="coldEngineFoam\createFields.H" />
+    <ClInclude Include="coldEngineFoam\logSummary.H" />
+    <ClInclude Include="coldEngineFoam\startSummary.H" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3F3D20A2-38F4-4D06-B93C-FA0E1B7DAA8B}</ProjectGuid>
+    <ProjectGuid>{F3C28E13-54BA-41BC-B5F5-7CA1892C3F2D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

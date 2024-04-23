@@ -19,15 +19,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="potentialFoam\createControls.H" />
-    <ClInclude Include="potentialFoam\createFields.H" />
+    <ClInclude Include="PDRFoam\bEqn.H" />
+    <ClInclude Include="PDRFoam\createFieldRefs.H" />
+    <ClInclude Include="PDRFoam\createFields.H" />
+    <ClInclude Include="PDRFoam\EaEqn.H" />
+    <ClInclude Include="PDRFoam\EauEqn.H" />
+    <ClInclude Include="PDRFoam\ftEqn.H" />
+    <ClInclude Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModel.H" />
+    <ClInclude Include="PDRFoam\pEqn.H" />
+    <ClInclude Include="PDRFoam\readCombustionProperties.H" />
+    <ClInclude Include="PDRFoam\rhoEqn.H" />
+    <ClInclude Include="PDRFoam\setDeltaT.H" />
+    <ClInclude Include="PDRFoam\StCourantNo.H" />
+    <ClInclude Include="PDRFoam\UEqn.H" />
+    <ClInclude Include="PDRFoam\XiModels\XiModel\XiModel.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="potentialFoam\potentialFoam.C" />
+    <ClCompile Include="PDRFoam\PDRFoam.C" />
+    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModel.C" />
+    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModelNew.C" />
+    <ClCompile Include="PDRFoam\XiModels\XiModel\XiModel.C" />
+    <ClCompile Include="PDRFoam\XiModels\XiModel\XiModelNew.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3F3D20A2-38F4-4D06-B93C-FA0E1B7DAA8B}</ProjectGuid>
+    <ProjectGuid>{F390876A-79CF-4FB7-886C-C9D91F05AE57}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -110,7 +126,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;..\..\OpenFOAM-win\lagrangian;..\..\OpenFOAM-win\regionModels;..\..\OpenFOAM-win\combustionModels;..\..\OpenFOAM-win\ODE;..\..\OpenFOAM-win\finiteArea;..\..\OpenFOAM-win\faOptions;..\..\OpenFOAM-win\regionFaModels;..\..\OpenFOAM-win\engine;.\PDRFoam\PDRModels\dragModels\PDRDragModel;.\PDRFoam\XiModels\XiModel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>WM_LABEL_SIZE=64;WM_DP;NoRepository;WIN32;WIN64;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
