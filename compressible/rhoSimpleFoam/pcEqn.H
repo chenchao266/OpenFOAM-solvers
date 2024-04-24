@@ -91,8 +91,11 @@ else
 
 // The incompressible form of the continuity error check is appropriate for
 // steady-state compressible also.
-#include "incompressible/continuityErrs.H"
-
+//#include "../incompressible/simpleFoam/overSimpleFoam/continuityErrs.H"
+ 
+//finiteVolume
+// #include "continuityErrs.H"
+ 
 // Explicitly relax pressure for momentum corrector
 p.relax();
 

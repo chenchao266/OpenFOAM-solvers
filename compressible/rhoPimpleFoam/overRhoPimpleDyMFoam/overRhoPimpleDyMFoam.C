@@ -163,7 +163,7 @@ int main(int argc, char *argv[])
 
                     if (correctPhi)
                     {
-                        #include "correctPhi.H"
+                        #include "correctPhi2.H"
                     }
 
                     // Zero phi on current H-I

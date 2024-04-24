@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="rhoPimpleAdiabaticFoam\createFields.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\EEqn.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\pEqn.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\resetBoundaries.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rhoPimpleAdiabaticFoam\rhoPimpleAdiabaticFoam.C" />
+  </ItemGroup>
+</Project>

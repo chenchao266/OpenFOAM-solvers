@@ -50,7 +50,7 @@ Note
 #include "bound.H"
 #include "pimpleControl.H"
 #include "pressureControl.H"
-#include "CorrectPhi.H"
+#include "CorrectPhi.H"         // finiteVolume\CorrectPhi.H
 #include "fvOptions.H"
 #include "localEulerDdtScheme.H"
 #include "fvcSmooth.H"
@@ -148,7 +148,7 @@ int main(int argc, char *argv[])
                         // from the mapped surface velocity
                         phi = mesh.Sf() & rhoUf();
 
-                        #include "correctPhi.H"
+                        #include "correctPhi2.H"
 
                         // Make the fluxes relative to the mesh-motion
                         fvc::makeRelative(phi, rho, U);

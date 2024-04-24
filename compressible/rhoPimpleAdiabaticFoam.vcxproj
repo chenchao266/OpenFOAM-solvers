@@ -19,17 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="coldEngineFoam\coldEngineFoam.C" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\createFields.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\EEqn.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\pEqn.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\resetBoundaries.H" />
+    <ClInclude Include="rhoPimpleAdiabaticFoam\UEqn.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="coldEngineFoam\createFieldRefs.H" />
-    <ClInclude Include="coldEngineFoam\createFields.H" />
-    <ClInclude Include="coldEngineFoam\logSummary.H" />
-    <ClInclude Include="coldEngineFoam\startSummary.H" />
+    <ClCompile Include="rhoPimpleAdiabaticFoam\rhoPimpleAdiabaticFoam.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{F3C28E13-54BA-41BC-B5F5-7CA1892C3F2D}</ProjectGuid>
+    <ProjectGuid>{927D8E8B-57BC-42BF-9321-67D6EEE7D88B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -45,7 +46,7 @@
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
@@ -83,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENQBMM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -97,7 +98,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENQBMM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -119,6 +120,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>..\..\OpenFOAM-win\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>atmosphericModels.lib;combustionModels.lib;conversion.lib;dummyThirdParty.lib;dynamicFaMesh.lib;dynamicFvMesh.lib;dynamicMesh.lib;engine.lib;faOptions.lib;fileFormats.lib;finiteArea.lib;finiteVolume.lib;functionObjects.lib;fvAgglomerationMethods.lib;fvMotionSolver.lib;fvOptions.lib;genericPatchFields.lib;lagrangian.lib;lumpedPointMotion.lib;mesh.lib;meshTools.lib;multiphaseEuler.lib;multiphaseInter.lib;ODE.lib;OpenFOAM.lib;optimisation.lib;OSspecific.lib;overset.lib;parallel.lib;Pstream.lib;randomProcesses.lib;reactingEuler.lib;regionFaModels.lib;regionModels.lib;renumber.lib;rigidBodyDynamics.lib;rigidBodyMeshMotion.lib;sampling.lib;semiPermeableBaffle.lib;sixDoFRigidBodyMotion.lib;sixDoFRigidBodyState.lib;surfMesh.lib;thermophysicalModels.lib;topoChangerFvMesh.lib;transportModels.lib;TurbulenceModels.lib;twoPhaseEuler.lib;twoPhaseInter.lib;waveModels.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
