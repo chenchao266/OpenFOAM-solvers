@@ -151,6 +151,15 @@ public:
 
             return os;
         }
+
+        bool operator==(const magnet& m) const
+        {
+            return name() == m.name() && mur() == m.mur() && Mr() == m.Mr() && orientation() == m.orientation();
+        }
+        bool operator!=(const magnet& m) const
+        {
+            return !(name() == m.name() && mur() == m.mur() && Mr() == m.Mr() && orientation() == m.orientation());
+        }
 };
 
 

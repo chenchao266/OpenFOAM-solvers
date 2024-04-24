@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="solidDisplacementFoam\calculateStress.H" />
+    <ClInclude Include="solidDisplacementFoam\createControl.H" />
+    <ClInclude Include="solidDisplacementFoam\createControls.H" />
+    <ClInclude Include="solidDisplacementFoam\createFields.H" />
+    <ClInclude Include="solidDisplacementFoam\readMechanicalProperties.H" />
+    <ClInclude Include="solidDisplacementFoam\readSolidDisplacementFoamControls.H" />
+    <ClInclude Include="solidDisplacementFoam\readThermalProperties.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="solidDisplacementFoam\solidDisplacementFoam.C" />
+  </ItemGroup>
+</Project>

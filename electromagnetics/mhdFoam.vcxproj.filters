@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="mhdFoam\createControl.H" />
+    <ClInclude Include="mhdFoam\createFields.H" />
+    <ClInclude Include="mhdFoam\createPhiB.H" />
+    <ClInclude Include="mhdFoam\magneticFieldErr.H" />
+    <ClInclude Include="mhdFoam\readBPISOControls.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mhdFoam\mhdFoam.C" />
+  </ItemGroup>
+</Project>

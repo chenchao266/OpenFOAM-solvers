@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="acousticFoam\acousticFoam.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acousticFoam\createFields.H" />
+    <ClInclude Include="acousticFoam\createRegionControls.H" />
+    <ClInclude Include="acousticFoam\paEqn.H" />
+    <ClInclude Include="acousticFoam\readTransportProperties.H" />
+  </ItemGroup>
+</Project>
