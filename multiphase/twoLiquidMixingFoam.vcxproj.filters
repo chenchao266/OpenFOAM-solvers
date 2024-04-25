@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="twoLiquidMixingFoam\alphaControls.H" />
+    <ClInclude Include="twoLiquidMixingFoam\alphaCourantNo.H" />
+    <ClInclude Include="twoLiquidMixingFoam\alphaDiffusionEqn.H" />
+    <ClInclude Include="twoLiquidMixingFoam\alphaEqn.H" />
+    <ClInclude Include="twoLiquidMixingFoam\alphaEqnSubCycle.H" />
+    <ClInclude Include="twoLiquidMixingFoam\createFields.H" />
+    <ClInclude Include="twoLiquidMixingFoam\pEqn.H" />
+    <ClInclude Include="twoLiquidMixingFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="twoLiquidMixingFoam\twoLiquidMixingFoam.C" />
+  </ItemGroup>
+</Project>

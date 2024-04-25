@@ -44,7 +44,7 @@ volVectorField U
 
 #include "createPhi.H"
 
-#include "readTransportProperties.H"
+#include "../buoyantBoussinesqSimpleFoam/readTransportProperties.H"
 
 Info<< "Creating turbulence model\n" << endl;
 autoPtr<incompressible::turbulenceModel> turbulence

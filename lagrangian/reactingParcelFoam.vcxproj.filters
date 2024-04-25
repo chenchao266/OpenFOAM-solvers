@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="reactingParcelFoam\createClouds.H" />
+    <ClInclude Include="reactingParcelFoam\createFieldRefs.H" />
+    <ClInclude Include="reactingParcelFoam\createFields.H" />
+    <ClInclude Include="reactingParcelFoam\createMeshesPostProcess.H" />
+    <ClInclude Include="reactingParcelFoam\createRegionControls.H" />
+    <ClInclude Include="reactingParcelFoam\createSurfaceFilmModel.H" />
+    <ClInclude Include="reactingParcelFoam\EEqn.H" />
+    <ClInclude Include="reactingParcelFoam\pEqn.H" />
+    <ClInclude Include="reactingParcelFoam\rhoEqn.H" />
+    <ClInclude Include="reactingParcelFoam\setMultiRegionDeltaT.H" />
+    <ClInclude Include="reactingParcelFoam\setRDeltaT.H" />
+    <ClInclude Include="reactingParcelFoam\UEqn.H" />
+    <ClInclude Include="reactingParcelFoam\YEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="reactingParcelFoam\reactingParcelFoam.C" />
+  </ItemGroup>
+</Project>

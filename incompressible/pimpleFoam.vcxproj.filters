@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pimpleFoam\correctPhi2.H" />
+    <ClInclude Include="pimpleFoam\createFields.H" />
+    <ClInclude Include="pimpleFoam\pEqn.H" />
+    <ClInclude Include="pimpleFoam\setRDeltaT.H" />
+    <ClInclude Include="pimpleFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pimpleFoam\pimpleFoam.C" />
+  </ItemGroup>
+</Project>

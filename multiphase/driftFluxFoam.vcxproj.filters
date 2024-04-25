@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="driftFluxFoam\alphaControls.H" />
+    <ClInclude Include="driftFluxFoam\alphaEqn.H" />
+    <ClInclude Include="driftFluxFoam\alphaEqnSubCycle.H" />
+    <ClInclude Include="driftFluxFoam\createFields.H" />
+    <ClInclude Include="driftFluxFoam\pEqn.H" />
+    <ClInclude Include="driftFluxFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driftFluxFoam\compressibleTurbulenceModels.C" />
+    <ClCompile Include="driftFluxFoam\driftFluxFoam.C" />
+  </ItemGroup>
+</Project>

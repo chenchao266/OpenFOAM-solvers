@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="MPPICInterFoam\alphaEqn.H" />
+    <ClInclude Include="MPPICInterFoam\alphaEqnSubCycle.H" />
+    <ClInclude Include="MPPICInterFoam\continuityErrs.H" />
+    <ClInclude Include="MPPICInterFoam\correctPhi2.H" />
+    <ClInclude Include="MPPICInterFoam\createFields.H" />
+    <ClInclude Include="MPPICInterFoam\pEqn.H" />
+    <ClInclude Include="MPPICInterFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MPPICInterFoam\MPPICInterFoam.C" />
+  </ItemGroup>
+</Project>

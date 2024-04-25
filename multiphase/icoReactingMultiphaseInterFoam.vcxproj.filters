@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="icoReactingMultiphaseInterFoam\alphaCourantNo.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\createFieldRefs.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\createFields.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\pEqn.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\setDeltaT.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\TEqn.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\UEqn.H" />
+    <ClInclude Include="icoReactingMultiphaseInterFoam\YEqns.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="icoReactingMultiphaseInterFoam\icoReactingMultiphaseInterFoam.C" />
+  </ItemGroup>
+</Project>

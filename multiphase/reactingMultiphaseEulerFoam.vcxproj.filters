@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="reactingMultiphaseEulerFoam\CourantNo.H" />
+    <ClInclude Include="reactingMultiphaseEulerFoam\createFieldRefs.H" />
+    <ClInclude Include="reactingMultiphaseEulerFoam\createFields.H" />
+    <ClInclude Include="reactingMultiphaseEulerFoam\EEqns.H" />
+    <ClInclude Include="reactingMultiphaseEulerFoam\setRDeltaT.H" />
+    <ClInclude Include="reactingMultiphaseEulerFoam\YEqns.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="reactingMultiphaseEulerFoam\reactingMultiphaseEulerFoam.C" />
+  </ItemGroup>
+</Project>

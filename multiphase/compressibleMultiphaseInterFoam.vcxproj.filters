@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="compressibleMultiphaseInterFoam\compressibleMultiphaseInterFoam.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="compressibleMultiphaseInterFoam\createFields.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\pEqn.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\TEqn.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\UEqn.H" />
+  </ItemGroup>
+</Project>

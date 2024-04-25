@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="cavitatingFoam\alphavPsi.H" />
+    <ClInclude Include="cavitatingFoam\continuityErrs.H" />
+    <ClInclude Include="cavitatingFoam\CourantNo.H" />
+    <ClInclude Include="cavitatingFoam\createControls.H" />
+    <ClInclude Include="cavitatingFoam\createFields.H" />
+    <ClInclude Include="cavitatingFoam\pEqn.H" />
+    <ClInclude Include="cavitatingFoam\readControls.H" />
+    <ClInclude Include="cavitatingFoam\readThermodynamicProperties.H" />
+    <ClInclude Include="cavitatingFoam\rhoEqn.H" />
+    <ClInclude Include="cavitatingFoam\setDeltaT.H" />
+    <ClInclude Include="cavitatingFoam\setInitialDeltaT.H" />
+    <ClInclude Include="cavitatingFoam\UEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cavitatingFoam\cavitatingFoam.C" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="DPMFoam\continuityErrs.H" />
+    <ClInclude Include="DPMFoam\CourantNo.H" />
+    <ClInclude Include="DPMFoam\createFields.H" />
+    <ClInclude Include="DPMFoam\pEqn.H" />
+    <ClInclude Include="DPMFoam\UcEqn.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DPMFoam\DPMFoam.C" />
+  </ItemGroup>
+</Project>
