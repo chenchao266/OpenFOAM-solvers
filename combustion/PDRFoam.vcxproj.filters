@@ -14,13 +14,13 @@
     <ClInclude Include="PDRFoam\StCourantNo.H" />
     <ClInclude Include="PDRFoam\UEqn.H" />
     <ClInclude Include="PDRFoam\XiModels\XiModel\XiModel.H" />
-    <ClInclude Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModel.H" />
+    <ClInclude Include="PDRFoam\PDRModels\dragModels\PDRDragModel.H" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PDRFoam\PDRFoam.C" />
     <ClCompile Include="PDRFoam\XiModels\XiModel\XiModel.C" />
     <ClCompile Include="PDRFoam\XiModels\XiModel\XiModelNew.C" />
-    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModel.C" />
-    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModel\PDRDragModelNew.C" />
+    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModel.C" />
+    <ClCompile Include="PDRFoam\PDRModels\dragModels\PDRDragModelNew.C" />
   </ItemGroup>
 </Project>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rhoCentralFoam\BCs\rho\fixedRhoFvPatchScalarField.H" />
+    <ClInclude Include="rhoCentralFoam\BCs\fixedRhoFvPatchScalarField.H" />
     <ClInclude Include="rhoCentralFoam\centralCourantNo.H" />
     <ClInclude Include="rhoCentralFoam\createFieldRefs.H" />
     <ClInclude Include="rhoCentralFoam\createFields.H" />
@@ -28,7 +28,7 @@
     <ClInclude Include="rhoCentralFoam\setRDeltaT.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rhoCentralFoam\BCs\rho\fixedRhoFvPatchScalarField.C" />
+    <ClCompile Include="rhoCentralFoam\BCs\fixedRhoFvPatchScalarField.C" />
     <ClCompile Include="rhoCentralFoam\rhoCentralFoam.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;..\..\OpenFOAM-win\dynamicFvMesh;.\rhoCentralFoam\BCs\rho;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\..\OpenFOAM-win\OpenFOAM\algorithms;..\..\OpenFOAM-win\OpenFOAM\containers;..\..\OpenFOAM-win\OpenFOAM\db;..\..\OpenFOAM-win\OpenFOAM\dimensionedTypes;..\..\OpenFOAM-win\OpenFOAM\dimensionSet;..\..\OpenFOAM-win\OpenFOAM\fields;..\..\OpenFOAM-win\OpenFOAM\global;..\..\OpenFOAM-win\OpenFOAM\graph;..\..\OpenFOAM-win\OpenFOAM\include;..\..\OpenFOAM-win\OpenFOAM\interpolations;..\..\OpenFOAM-win\OpenFOAM\matrices;..\..\OpenFOAM-win\OpenFOAM\memory;..\..\OpenFOAM-win\OpenFOAM\meshes;..\..\OpenFOAM-win\OpenFOAM\primitives;..\..\OpenFOAM-win\OSspecific;..\..\OpenFOAM-win\finiteVolume;..\..\OpenFOAM-win\meshTools;..\..\OpenFOAM-win\dynamicMesh;..\..\OpenFOAM-win\fileFormats;..\..\OpenFOAM-win\thermophysicalModels;..\..\OpenFOAM-win\transportModels;..\..\OpenFOAM-win\TurbulenceModels;..\..\OpenFOAM-win\dynamicFvMesh;.\rhoCentralFoam\BCs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>WM_LABEL_SIZE=64;WM_DP;NoRepository;WIN32;WIN64;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>

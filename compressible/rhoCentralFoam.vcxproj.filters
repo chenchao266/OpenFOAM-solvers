@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="acousticFoam\acousticFoam.C" />
+    <ClCompile Include="rhoCentralFoam\BCs\fixedRhoFvPatchScalarField.C" />
+    <ClCompile Include="rhoCentralFoam\rhoCentralFoam.C" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="acousticFoam\createFields.H" />
-    <ClInclude Include="acousticFoam\createRegionControls.H" />
-    <ClInclude Include="acousticFoam\paEqn.H" />
-    <ClInclude Include="acousticFoam\readTransportProperties.H" />
+    <ClInclude Include="rhoCentralFoam\BCs\fixedRhoFvPatchScalarField.H" />
+    <ClInclude Include="rhoCentralFoam\centralCourantNo.H" />
+    <ClInclude Include="rhoCentralFoam\createFieldRefs.H" />
+    <ClInclude Include="rhoCentralFoam\createFields.H" />
+    <ClInclude Include="rhoCentralFoam\directionInterpolate.H" />
+    <ClInclude Include="rhoCentralFoam\readFluxScheme.H" />
+    <ClInclude Include="rhoCentralFoam\setRDeltaT.H" />
   </ItemGroup>
 </Project>
