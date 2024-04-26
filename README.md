@@ -69,7 +69,6 @@ vs 2022
 -   multiphase\reactingTwoPhaseEulerFoam.vcxproj
 -   multiphase\twoLiquidMixingFoam.vcxproj
 -   multiphase\twoPhaseEulerFoam.vcxproj
--   multiphase\VoF.vcxproj
 -   stressAnalysis\solidDisplacementFoam.vcxproj
 -   stressAnalysis\solidEquilibriumDisplacementFoam.vcxproj
  
