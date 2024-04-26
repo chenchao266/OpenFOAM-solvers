@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
     #include "createTimeControls.H"
     #include "initContinuityErrs.H"
     #include "createFields.H"
-    #include "createAlphaFluxes.H"
+    #include "VoF/createAlphaFluxes.H"
     #include "createFvOptions.H"
     #include "correctPhi.H"
 
@@ -98,12 +98,12 @@ int main(int argc, char *argv[])
 
         if (LTS)
         {
-            #include "setRDeltaT.H"
+            #include "VoF/setRDeltaT.H"
         }
         else
         {
             #include "CourantNo.H"
-            #include "alphaCourantNo.H"
+            #include "VoF/alphaCourantNo.H"
             #include "setDeltaT.H"
         }
 
@@ -147,7 +147,7 @@ int main(int argc, char *argv[])
         cloudVolSUSu.primitiveFieldRef() = -cloudSU.source()/mesh.V();
         cloudVolSUSu.correctBoundaryConditions();
 
-        cloudSU.source() = vector::zero;
+        cloudSU.source() = vector::zero_;
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())

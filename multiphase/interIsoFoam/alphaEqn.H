@@ -6,7 +6,7 @@
     }
 
     // Updating alpha1
-    #include "alphaSuSp.H"
+    #include "../interFoam/alphaSuSp.H"
     advector.advect(Sp, Su);
 
     // Making U absolute again after advection step
@@ -15,7 +15,7 @@
         U += fvc::reconstruct(mesh.phi());
     }
 
-    #include "rhofs.H"
+    #include "../interFoam/rhofs.H"
     rhoPhi = advector.getRhoPhi(rho1f, rho2f);
 
     alpha2 = 1.0 - alpha1;

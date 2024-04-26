@@ -81,8 +81,8 @@ int main(int argc, char *argv[])
     #include "initContinuityErrs.H"
     #include "createDyMControls.H"
     #include "createFields.H"
-    #include "createAlphaFluxes.H"
-    #include "initCorrectPhi.H"
+    #include "VoF/createAlphaFluxes.H"
+    #include "../interFoam/initCorrectPhi.H"
     #include "createUfIfPresent.H"
 
     #include "CourantNo.H"
@@ -159,11 +159,11 @@ int main(int argc, char *argv[])
             mixture->correct();
 
             #include "alphaControls.H"
-            #include "alphaEqnSubCycle.H"
+            #include "interPhaseChangeFoam/alphaEqnSubCycle.H"
 
             interface.correct();
 
-            #include "UEqn.H"
+            #include "interPhaseChangeFoam/UEqn.H"
             #include "TEqn.H"
 
             // --- Pressure corrector loop

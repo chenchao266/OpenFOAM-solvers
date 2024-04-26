@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
     #include "initContinuityErrs.H"
     #include "createDyMControls.H"
     #include "createFields.H"
-    #include "initCorrectPhi.H"
+    #include "../interFoam/initCorrectPhi.H"
     #include "createUfIfPresent.H"
 
     #include "porousCourantNo.H"
@@ -175,7 +175,7 @@ int main(int argc, char *argv[])
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "../interFoam/pEqn.H"
             }
 
             if (pimple.turbCorr())

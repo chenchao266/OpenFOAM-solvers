@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
     #include "initContinuityErrs.H"
     #include "createDyMControls.H"
     #include "createFields.H"
-    #include "createAlphaFluxes.H"
+    #include "VoF/createAlphaFluxes.H"
     #include "initCorrectPhi.H"
     #include "createUfIfPresent.H"
 
@@ -93,12 +93,12 @@ int main(int argc, char *argv[])
 
         if (LTS)
         {
-            #include "setRDeltaT.H"
+            #include "VoF/setRDeltaT.H"
         }
         else
         {
             #include "CourantNo.H"
-            #include "alphaCourantNo.H"
+            #include "VoF/alphaCourantNo.H"
             #include "setDeltaT.H"
         }
 
@@ -149,7 +149,7 @@ int main(int argc, char *argv[])
             }
 
             #include "alphaControls.H"
-            #include "alphaEqnSubCycle.H"
+            #include "VoF/alphaEqnSubCycle.H"
 
             mixture.correct();
 

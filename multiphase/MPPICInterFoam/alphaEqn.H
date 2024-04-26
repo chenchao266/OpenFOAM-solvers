@@ -96,7 +96,7 @@
 
     if (MULESCorr)
     {
-        #include "alphaSuSp.H"
+        #include "../interFoam/alphaSuSp.H"
 
         fvScalarMatrix alpha1Eqn
         (
@@ -155,7 +155,7 @@
 
     for (int aCorr=0; aCorr<nAlphaCorr; aCorr++)
     {
-        #include "alphaSuSp.H"
+        #include "../interFoam/alphaSuSp.H"
 
         surfaceScalarField phir(phic*mixture.nHatf());
 
@@ -241,7 +241,7 @@
      == fv::EulerDdtScheme<vector>::typeName
     )
     {
-        #include "rhofs.H"
+        #include "../interFoam/rhofs.H"
         rhoPhi = alphaPhi10*(rho1f - rho2f) + phiCN*rho2f;
     }
     else
@@ -254,7 +254,7 @@
         }
 
         // Calculate the end-of-time-step mass flux
-        #include "rhofs.H"
+        #include "../interFoam/rhofs.H"
         rhoPhi = alphaPhi10*(rho1f - rho2f) + alphaPhic*rho2f;
     }
 

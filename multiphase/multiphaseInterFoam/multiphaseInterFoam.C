@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
     #include "initContinuityErrs.H"
     #include "createDyMControls.H"
     #include "createFields.H"
-    #include "initCorrectPhi.H"
+    #include "../interFoam/initCorrectPhi.H"
     #include "createUfIfPresent.H"
 
     turbulence->validate();
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     {
         #include "readDyMControls.H"
         #include "CourantNo.H"
-        #include "alphaCourantNo.H"
+        #include "VoF/alphaCourantNo.H"
         #include "setDeltaT.H"
 
         ++runTime;
@@ -135,12 +135,12 @@ int main(int argc, char *argv[])
             mixture.solve();
             rho = mixture.rho();
 
-            #include "UEqn.H"
+            #include "../interFoam/UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "../interFoam/pEqn.H"
             }
 
             if (pimple.turbCorr())
