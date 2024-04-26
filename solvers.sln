@@ -167,8 +167,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "twoLiquidMixingFoam", "mult
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "twoPhaseEulerFoam", "multiphase\twoPhaseEulerFoam.vcxproj", "{EEE63ECE-AD93-40D9-A653-022BBA287542}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoF", "multiphase\VoF.vcxproj", "{4C8AAFDF-C255-4747-80D5-BCAB539C504D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -721,14 +719,6 @@ Global
 		{EEE63ECE-AD93-40D9-A653-022BBA287542}.Release|x64.Build.0 = Release|x64
 		{EEE63ECE-AD93-40D9-A653-022BBA287542}.Release|x86.ActiveCfg = Release|Win32
 		{EEE63ECE-AD93-40D9-A653-022BBA287542}.Release|x86.Build.0 = Release|Win32
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Debug|x64.ActiveCfg = Debug|x64
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Debug|x64.Build.0 = Debug|x64
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Debug|x86.ActiveCfg = Debug|Win32
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Debug|x86.Build.0 = Debug|Win32
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Release|x64.ActiveCfg = Release|x64
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Release|x64.Build.0 = Release|x64
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Release|x86.ActiveCfg = Release|Win32
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -802,7 +792,6 @@ Global
 		{5DA3D766-FA86-49C4-BC24-E837584E69F5} = {93D34184-60D9-4618-BC91-75040D581985}
 		{A03DB067-3954-49D1-9023-F1569B47D368} = {93D34184-60D9-4618-BC91-75040D581985}
 		{EEE63ECE-AD93-40D9-A653-022BBA287542} = {93D34184-60D9-4618-BC91-75040D581985}
-		{4C8AAFDF-C255-4747-80D5-BCAB539C504D} = {93D34184-60D9-4618-BC91-75040D581985}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F2C91B3-03E1-4501-81C7-5D5D325F4DB1}

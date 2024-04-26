@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     #include "createFields.H"
     #include "createFieldRefs.H"
 
-    #include "initCorrectPhi.H"
+    #include "../interFoam/initCorrectPhi.H"
     #include "createUfIfPresent.H"
 
     #include "createFvOptions.H"

@@ -79,7 +79,7 @@ mesh.setFluxRequired(p.name());
 
 #include "createMRF.H"
 #include "createClouds.H"
-#include "createSurfaceFilmModel.H"
+#include "reactingParcelFoam/createSurfaceFilmModel.H"
 #include "createFvOptions.H"
 
 

@@ -55,8 +55,8 @@ int main(int argc, char *argv[])
         " with kinematic particle clouds"
         " and surface film modelling."
     );
-
-    #define CREATE_MESH createMeshesPostProcess.H
+ 
+    #define CREATE_MESH  reactingParcelFoam/createMeshesPostProcess.H
     #include "postProcess.H"
 
     #include "addCheckCaseOptions.H"
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
     #include "createDyMControls.H"
     #include "createFields.H"
     #include "createFieldRefs.H"
-    #include "createRegionControls.H"
+    #include "reactingParcelFoam/createRegionControls.H"
     #include "createUfIfPresent.H"
 
     turbulence->validate();
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
     {
         #include "readDyMControls.H"
         #include "CourantNo.H"
-        #include "setMultiRegionDeltaT.H"
+        #include "reactingParcelFoam/setMultiRegionDeltaT.H"
 
         ++runTime;
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
                 // from the mapped surface velocity
                 phi = mesh.Sf() & Uf();
 
-                #include "../../incompressible/pimpleFoam/correctPhi.H"
+                #include "../../incompressible/pimpleFoam/correctPhi2.H"
 
                 // Make the fluxes relative to the mesh-motion
                 fvc::makeRelative(phi, U);

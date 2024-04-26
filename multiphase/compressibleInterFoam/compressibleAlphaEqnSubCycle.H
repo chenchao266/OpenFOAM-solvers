@@ -42,7 +42,7 @@ if (nAlphaSubCycles > 1)
         !(++alphaSubCycle).end();
     )
     {
-        #include "alphaEqn.H"
+        #include "VoF/alphaEqn.H"
         talphaPhi1.ref() += (runTime.deltaT()/totalDeltaT)*alphaPhi10;
         rhoPhiSum += (runTime.deltaT()/totalDeltaT)*rhoPhi;
     }
@@ -51,7 +51,7 @@ if (nAlphaSubCycles > 1)
 }
 else
 {
-    #include "alphaEqn.H"
+    #include "VoF/alphaEqn.H"
 }
 
 rho == alpha1*rho1 + alpha2*rho2;

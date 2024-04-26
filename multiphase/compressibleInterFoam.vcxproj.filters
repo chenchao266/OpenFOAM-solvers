@@ -8,8 +8,12 @@
     <ClInclude Include="compressibleInterFoam\rhofs.H" />
     <ClInclude Include="compressibleInterFoam\TEqn.H" />
     <ClInclude Include="compressibleInterFoam\UEqn.H" />
+    <ClInclude Include="compressibleInterFoam\VoFphaseCompressibleTurbulenceModels\compressibleInterPhaseTransportModel.H" />
+    <ClInclude Include="compressibleInterFoam\twoPhaseMixtureThermo\twoPhaseMixtureThermo.H" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="compressibleInterFoam\compressibleInterFoam.C" />
+    <ClCompile Include="compressibleInterFoam\VoFphaseCompressibleTurbulenceModels\compressibleInterPhaseTransportModel.C" />
+    <ClCompile Include="compressibleInterFoam\twoPhaseMixtureThermo\twoPhaseMixtureThermo.C" />
   </ItemGroup>
 </Project>

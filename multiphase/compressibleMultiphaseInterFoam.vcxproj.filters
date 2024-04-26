@@ -2,11 +2,17 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="compressibleMultiphaseInterFoam\compressibleMultiphaseInterFoam.C" />
+    <ClCompile Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\multiphaseMixtureThermo.C" />
+    <ClCompile Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\phaseModel\phaseModel.C" />
+    <ClCompile Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\alphaContactAngle\alphaContactAngleFvPatchScalarField.C" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compressibleMultiphaseInterFoam\createFields.H" />
     <ClInclude Include="compressibleMultiphaseInterFoam\pEqn.H" />
     <ClInclude Include="compressibleMultiphaseInterFoam\TEqn.H" />
     <ClInclude Include="compressibleMultiphaseInterFoam\UEqn.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\multiphaseMixtureThermo.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\phaseModel\phaseModel.H" />
+    <ClInclude Include="compressibleMultiphaseInterFoam\multiphaseMixtureThermo\alphaContactAngle\alphaContactAngleFvPatchScalarField.H" />
   </ItemGroup>
 </Project>

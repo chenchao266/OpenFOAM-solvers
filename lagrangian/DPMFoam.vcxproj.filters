@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DPMFoam\DPMFoam.C" />
+    <ClCompile Include="DPMFoam\DPMTurbulenceModels\DPMTurbulenceModels.C" />
   </ItemGroup>
 </Project>

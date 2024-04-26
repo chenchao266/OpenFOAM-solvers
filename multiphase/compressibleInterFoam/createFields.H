@@ -89,7 +89,7 @@ surfaceScalarField rhoPhi
 
 volScalarField dgdt(alpha1*fvc::div(phi));
 
-#include "createAlphaFluxes.H"
+#include "VoF/createAlphaFluxes.H"
 
 // Construct compressible turbulence model
 compressibleInterPhaseTransportModel turbulence

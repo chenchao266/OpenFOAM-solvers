@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
     {
         #include "readTimeControls.H"
         #include "CourantNo.H"
-        #include "alphaCourantNo.H"
+        #include "VoF/alphaCourantNo.H"
         #include "setDeltaT.H"
 
         ++runTime;
