@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
 
         if (LTS)
         {
-            #include "setRDeltaT.H"
+            #include "../incompressible/pimpleFoam/setRDeltaT.H"
         }
         else
         {
