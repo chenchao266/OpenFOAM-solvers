@@ -26,6 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="interCondensatingEvaporatingFoam\interCondensatingEvaporatingFoam.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\twoPhaseMixtureEThermo.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -113,9 +113,9 @@ Foam::tmp<Foam::volScalarField> Foam::twoPhaseMixtureEThermo::hc() const
     (
         IOobject
         (
-            "hc",
-            mesh.time().timeName(),
-            mesh,
+            word("hc"),
+            fileName(mesh.time().timeName()),
+            (mesh),
             IOobject::NO_READ,
             IOobject::AUTO_WRITE
         ),

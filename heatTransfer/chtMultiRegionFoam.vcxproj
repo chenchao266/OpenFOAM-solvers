@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chtMultiRegionFoam\chtMultiRegionFoam.C" />
+    <ClCompile Include="chtMultiRegionFoam\fluid\compressibleCourantNo.C" />
+    <ClCompile Include="chtMultiRegionFoam\solid\solidRegionDiffNo.C" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chtMultiRegionFoam\createFields.H" />

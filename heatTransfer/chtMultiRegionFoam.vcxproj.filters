@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="chtMultiRegionFoam\chtMultiRegionFoam.C" />
+    <ClCompile Include="chtMultiRegionFoam\fluid\compressibleCourantNo.C" />
+    <ClCompile Include="chtMultiRegionFoam\solid\solidRegionDiffNo.C" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chtMultiRegionFoam\createFields.H" />

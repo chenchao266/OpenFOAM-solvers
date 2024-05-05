@@ -10,5 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="interPhaseChangeFoam\interPhaseChangeFoam.C" />
+    <ClCompile Include="interPhaseChangeFoam\phaseChangeTwoPhaseMixtures\phaseChangeTwoPhaseMixture.C" />
+    <ClCompile Include="interPhaseChangeFoam\phaseChangeTwoPhaseMixtures\phaseChangeTwoPhaseMixtureNew.C" />
   </ItemGroup>
 </Project>

@@ -28,6 +28,7 @@
     <ClInclude Include="MPPICInterFoam\UEqn.H" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MPPICInterFoam\compressibleTwoPhaseMixtureTurbulenceModels.C" />
     <ClCompile Include="MPPICInterFoam\MPPICInterFoam.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

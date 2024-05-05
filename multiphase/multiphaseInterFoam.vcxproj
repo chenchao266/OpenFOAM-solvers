@@ -20,11 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="multiphaseInterFoam\createFields.H" />
+    <ClInclude Include="multiphaseInterFoam\multiphaseMixture\alphaContactAngleFvPatchScalarField.H" />
     <ClInclude Include="multiphaseInterFoam\multiphaseMixture\multiphaseMixture.H" />
+    <ClInclude Include="multiphaseInterFoam\multiphaseMixture\phase.H" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="multiphaseInterFoam\multiphaseInterFoam.C" />
+    <ClCompile Include="multiphaseInterFoam\multiphaseMixture\alphaContactAngleFvPatchScalarField.C" />
     <ClCompile Include="multiphaseInterFoam\multiphaseMixture\multiphaseMixture.C" />
+    <ClCompile Include="multiphaseInterFoam\multiphaseMixture\phase.C" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

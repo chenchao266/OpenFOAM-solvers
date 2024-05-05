@@ -11,5 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MPPICInterFoam\MPPICInterFoam.C" />
+    <ClCompile Include="MPPICInterFoam\compressibleTwoPhaseMixtureTurbulenceModels.C" />
   </ItemGroup>
 </Project>

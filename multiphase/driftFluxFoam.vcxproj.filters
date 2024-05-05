@@ -9,6 +9,7 @@
     <ClInclude Include="driftFluxFoam\UEqn.H" />
     <ClInclude Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModel.H" />
     <ClInclude Include="driftFluxFoam\relativeVelocityModels\relativeVelocityModel.H" />
+    <ClInclude Include="driftFluxFoam\incompressibleTwoPhaseInteractingMixture\incompressibleTwoPhaseInteractingMixture.H" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="driftFluxFoam\compressibleTurbulenceModels.C" />
@@ -16,5 +17,6 @@
     <ClCompile Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModel.C" />
     <ClCompile Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModelNew.C" />
     <ClCompile Include="driftFluxFoam\relativeVelocityModels\relativeVelocityModel.C" />
+    <ClCompile Include="driftFluxFoam\incompressibleTwoPhaseInteractingMixture\incompressibleTwoPhaseInteractingMixture.C" />
   </ItemGroup>
 </Project>

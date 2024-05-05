@@ -23,6 +23,7 @@
     <ClInclude Include="driftFluxFoam\alphaEqn.H" />
     <ClInclude Include="driftFluxFoam\alphaEqnSubCycle.H" />
     <ClInclude Include="driftFluxFoam\createFields.H" />
+    <ClInclude Include="driftFluxFoam\incompressibleTwoPhaseInteractingMixture\incompressibleTwoPhaseInteractingMixture.H" />
     <ClInclude Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModel.H" />
     <ClInclude Include="driftFluxFoam\pEqn.H" />
     <ClInclude Include="driftFluxFoam\relativeVelocityModels\relativeVelocityModel.H" />
@@ -31,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="driftFluxFoam\compressibleTurbulenceModels.C" />
     <ClCompile Include="driftFluxFoam\driftFluxFoam.C" />
+    <ClCompile Include="driftFluxFoam\incompressibleTwoPhaseInteractingMixture\incompressibleTwoPhaseInteractingMixture.C" />
     <ClCompile Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModel.C" />
     <ClCompile Include="driftFluxFoam\mixtureViscosityModels\mixtureViscosityModelNew.C" />
     <ClCompile Include="driftFluxFoam\relativeVelocityModels\relativeVelocityModel.C" />
