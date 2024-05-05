@@ -93,13 +93,13 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "UEqn.H"
+            #include "../XiFoam/UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "EEqn.H"
-                #include "pEqn.H"
+                #include "../../compressible/rhoPimpleFoam/EEqn.H"
+                #include "../XiFoam/pEqn.H"
             }
 
             if (pimple.turbCorr())
