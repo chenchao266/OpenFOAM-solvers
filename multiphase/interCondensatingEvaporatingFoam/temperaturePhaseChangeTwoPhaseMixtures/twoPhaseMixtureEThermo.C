@@ -24,6 +24,8 @@ License
     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
 
 \*---------------------------------------------------------------------------*/
+#include "dynamicFvMesh.H"
+#include "IOobject.H"
 
 #include "twoPhaseMixtureEThermo.H"
 
@@ -112,7 +114,7 @@ Foam::tmp<Foam::volScalarField> Foam::twoPhaseMixtureEThermo::hc() const
 
     return tmp<volScalarField>::New
     (
-        IOobject
+        Foam::IOobject
         (
             ("hc"),
             (mesh.time().timeName()),
