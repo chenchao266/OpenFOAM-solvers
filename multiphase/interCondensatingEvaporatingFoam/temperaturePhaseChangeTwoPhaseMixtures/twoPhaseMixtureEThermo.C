@@ -31,8 +31,8 @@ License
 #include "fixedEnergyFvPatchScalarField.H"
 #include "gradientEnergyFvPatchScalarField.H"
 #include "mixedEnergyFvPatchScalarField.H"
-#include "twoPhaseMixtureEThermo.H"
-#include "fvMesh.H"
+
+
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 
@@ -114,8 +114,8 @@ Foam::tmp<Foam::volScalarField> Foam::twoPhaseMixtureEThermo::hc() const
     (
         IOobject
         (
-            word("hc"),
-            fileName(mesh.time().timeName()),
+            ("hc"),
+            (mesh.time().timeName()),
             (mesh),
             IOobject::NO_READ,
             IOobject::AUTO_WRITE

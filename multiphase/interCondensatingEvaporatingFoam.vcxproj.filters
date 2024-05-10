@@ -9,5 +9,10 @@
   <ItemGroup>
     <ClCompile Include="interCondensatingEvaporatingFoam\interCondensatingEvaporatingFoam.C" />
     <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\twoPhaseMixtureEThermo.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\constant.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\interfaceHeatResistance.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\temperaturePhaseChangeTwoPhaseMixture.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\temperaturePhaseChangeTwoPhaseMixtureNew.C" />
+    <ClCompile Include="interCondensatingEvaporatingFoam\temperaturePhaseChangeTwoPhaseMixtures\thermoIncompressibleTwoPhaseMixture.C" />
   </ItemGroup>
 </Project>
