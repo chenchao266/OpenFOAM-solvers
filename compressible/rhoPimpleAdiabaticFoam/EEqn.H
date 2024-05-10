@@ -45,5 +45,5 @@
     rho = thermo.rho();
     rho.relax();
 
-    rho.writeMinMax(Info);
+    //rho.writeMinMax(Info);//??
 }
